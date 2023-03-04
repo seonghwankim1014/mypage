@@ -68,7 +68,7 @@
 
 
         .mypost {
-            width: 1300px;
+            width: 500px;
             margin: 20px auto 20px auto;
             padding: 20px 20px 20px 20px;
 
@@ -88,12 +88,23 @@
             margin-right: 10px;
 
         }
+
+        .subtitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <div class="mytitle">
-        <h1>내 생애 최고의 영화들!</h1>
+        <h1>내 생애 최고의 영화들</h1>
         <h6>당신의 생애 최대의 영화들을 기록하세요!</h5>
             <button>영화 기록하기</button>
     </div>
@@ -106,10 +117,25 @@
             <label for="floatingInput">영화 url을 입력해주세요😍</label>
         </div>
         <p>
+        <h5>별점</h5>
+        </p>
+        <div class="input-group mb-3" style="height: 60px;">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>영화의 별점을 선택해주세요😘</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        </div>
+        <p>
         <h5>코멘트</h5>
         </p>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                style="height: 100px;"></textarea>
             <label for="floatingTextarea">당신의 멋진 코멘트를 남겨주세요!😍</label>
         </div>
         <div class="mybtn">
@@ -117,7 +143,10 @@
             <button type="button" class="btn btn-outline-dark">닫기</button>
         </div>
     </div>
-
+<div class="subtitle">
+<h2>내가 남긴 명작들</h2>
+<h6>당신이 남긴 소중한 감상평을 확인하고 공유해요</h6>
+</div>
     <div class="mycards">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
